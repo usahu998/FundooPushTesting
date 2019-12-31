@@ -170,7 +170,7 @@ public class UserRegistration {
     }
 
     @Test
-    public void givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode() {
+    public void givenRedirectPOSTApi_whenAllCredentialAreCorrect_shouldReturnCode() {
         File testUploadFile = new File("/home/admin1/IdeaProjects/FundooPush/src/test/resources/ganeshJi");
         Response response = RestAssured.given()
                 .accept(ContentType.JSON)
@@ -191,5 +191,31 @@ public class UserRegistration {
         System.out.println(body.prettyPrint());
         System.out.println("Redirect Successfull..." + statusCode);
         Assert.assertEquals(201, statusCode);
+    }
+
+    @Test
+    public void givenRedirectPUTApi_whenAllCredentialAreCorrect_shouldReturnCode() {
+        File testUploadFile = new File("/home/admin1/IdeaProjects/FundooPush/src/test/resources/ganeshJi");
+        Response response = RestAssured.given()
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .multiPart("image", testUploadFile)
+                .formParam("_id", "5e0ad80a4d2267003253101b")
+                .formParam("title", "god ganesha")
+                .formParam("description", "new images of ganesha")
+                .formParam("redirect_link", "www.facebook.com")
+                .formParam("isDeleted", false)
+                .formParam("is_published", false)
+                .formParam("archive", false)
+                .formParam("youtube_flag", false)
+                .formParam("youtube_url", "https://www.youtube.com/watch?v=QKKMxboJMcw")
+                .formParam("video_link", "https://www.youtube.com/watch?v=QKKMxboJMcw")
+                .when()
+                .put("https://fundoopush-backend-dev.bridgelabz.com/redirects");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect Successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
     }
 }

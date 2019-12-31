@@ -1,70 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T05:18:21" hostname="admin1-desktop" time="2.873">
+<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T05:34:14" hostname="admin1-desktop" time="3.199">
   <properties/>
-  <testcase name="givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="2.873"/>
+  <testcase name="givenRedirectPUTApi_whenAllCredentialAreCorrect_shouldReturnCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="3.199"/>
   <system-out><![CDATA[{
     "status": true,
-    "message": "Redirect added Successfully",
+    "message": "Redirect updated Successfully",
     "data": {
-        "redirect": {
-            "isDeleted": false,
-            "is_published": false,
-            "archive": false,
-            "title_duplicate_counter": 0,
-            "_id": "5e0ada1f4d22670032531020",
-            "title": "ganesh-6",
-            "description": "ganeshji",
-            "redirect_link": "www.google.com",
-            "youtube_flag": true,
-            "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
-            "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
-            "image_timestamp": "1577769502107",
-            "title_url": "ganesh-6",
-            "image": "images/1577769502107.png",
-            "original_name": "ganeshJi",
-            "apply_redirect": false,
-            "youtube_id": "QKKMxboJMcw",
-            "creator_stamp": "2019-12-31T05:18:23.824Z",
-            "update_stamp": "2019-12-31T05:18:23.824Z",
-            "__v": 0
-        },
-        "hashtag": [
-            
-        ]
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
     }
 }
 {
     "status": true,
-    "message": "Redirect added Successfully",
+    "message": "Redirect updated Successfully",
     "data": {
-        "redirect": {
-            "isDeleted": false,
-            "is_published": false,
-            "archive": false,
-            "title_duplicate_counter": 0,
-            "_id": "5e0ada1f4d22670032531020",
-            "title": "ganesh-6",
-            "description": "ganeshji",
-            "redirect_link": "www.google.com",
-            "youtube_flag": true,
-            "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
-            "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
-            "image_timestamp": "1577769502107",
-            "title_url": "ganesh-6",
-            "image": "images/1577769502107.png",
-            "original_name": "ganeshJi",
-            "apply_redirect": false,
-            "youtube_id": "QKKMxboJMcw",
-            "creator_stamp": "2019-12-31T05:18:23.824Z",
-            "update_stamp": "2019-12-31T05:18:23.824Z",
-            "__v": 0
-        },
-        "hashtag": [
-            
-        ]
+        "n": 1,
+        "nModified": 1,
+        "ok": 1
     }
 }
-Redirect Successfull...201
+Redirect Successfull...200
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
