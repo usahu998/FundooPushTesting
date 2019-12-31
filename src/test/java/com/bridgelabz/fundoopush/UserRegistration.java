@@ -1,30 +1,20 @@
 package com.bridgelabz.fundoopush;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
-import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.io.File;
 
 import static io.restassured.RestAssured.given;
 
 public class UserRegistration {
 
-
     @Test
     public void RegistrationSuccessful() {
-
         RestAssured.baseURI = "https://fundoopush-backend-dev.bridgelabz.com/registration";
         RequestSpecification request = given()
                 .contentType(ContentType.JSON)
@@ -36,7 +26,6 @@ public class UserRegistration {
         Response response = request.post("https://fundoopush-backend-dev.bridgelabz.com/registration");
         int statusCode = response.getStatusCode();
         Assert.assertEquals(201, statusCode);
-
     }
 
     @Test
@@ -51,7 +40,6 @@ public class UserRegistration {
         Assert.assertEquals(400, statusCode);
     }
 
-
     @Test
     public void givenFundooPush_UserRegistration_IfEmailIsExiest_and_pwdisEmpty_thenshouldreturn_StatusCode() {
         Response response = given()
@@ -63,7 +51,6 @@ public class UserRegistration {
         int statusCode = response.getStatusCode();
         Assert.assertEquals(400, statusCode);
     }
-
 
     @Test
     public void givenFundooPush_UserRegistration_IfEmailIsExist_and_pwdisExiest_thenshouldreturn_StatusCode() {
@@ -77,7 +64,6 @@ public class UserRegistration {
         Assert.assertEquals(400, statusCode);
     }
 
-
     @Test
     public void givenFundooPush_UserRegistration_ShouldReturnEmailAlreadyExist() {
         Response response = given()
@@ -89,7 +75,6 @@ public class UserRegistration {
         int statusCode = response.getStatusCode();
         Assert.assertEquals(409, statusCode);       // response.then().body("id", Matchers.any(Integer.class));
     }
-
 
     @Test
     public void givenFundooPush_UserRegistration_ShouldReturnSuccesasfullye() {
@@ -122,7 +107,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDA
         Assert.assertEquals(200, code); //successful
         body.prettyPrint();
     }
-
 
     @Test
     public void givenLogin_WhenEmailCorrectAndPasswordEmpty_ShouldReturnSuccessCode() {
@@ -181,13 +165,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDA
                 .post("https://fundoopush-backend-dev.bridgelabz.com/logout");
         int statusCode = response.getStatusCode();
         System.out.println("Logout failed..." + statusCode);
-
-
         Assert.assertEquals(500, statusCode);       // response.then().body("id", Matchers.any(Integer.class));
     }
-
-
-
-
-
 }
