@@ -218,4 +218,18 @@ public class UserRegistration {
         System.out.println("Redirect Successfull..." + statusCode);
         Assert.assertEquals(200, statusCode);
     }
+
+    @Test
+    public void givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .when()
+                .get("https://fundoopush-backend-dev.bridgelabz.com/redirects");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
+    }
 }

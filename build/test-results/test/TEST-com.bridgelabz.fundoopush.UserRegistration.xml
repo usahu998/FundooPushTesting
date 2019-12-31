@@ -1,26 +1,3922 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T05:34:14" hostname="admin1-desktop" time="3.199">
+<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T05:44:14" hostname="admin1-desktop" time="1.628">
   <properties/>
-  <testcase name="givenRedirectPUTApi_whenAllCredentialAreCorrect_shouldReturnCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="3.199"/>
+  <testcase name="givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="1.628"/>
   <system-out><![CDATA[{
     "status": true,
-    "message": "Redirect updated Successfully",
-    "data": {
-        "n": 1,
-        "nModified": 1,
-        "ok": 1
-    }
+    "message": "All Redirects retrieved Successfully",
+    "data": [
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 16,
+                "_id": "5e09e5a64d22670032530fe7",
+                "title": "Butterfly",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577706916450",
+                "title_url": "butterfly",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577706916450_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T11:55:18.626Z",
+                "update_stamp": "2019-12-31T05:42:35.129Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0acfbf4d22670032531003",
+                "title": "image changed",
+                "description": "set different image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770912973",
+                "title_url": "image-changed",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770912973_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T04:34:07.758Z",
+                "update_stamp": "2019-12-31T05:41:54.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-changed/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf9c4d22670032531036",
+                "title": "sample -12",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770906381",
+                "title_url": "sample--12",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770906381_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:41:48.576Z",
+                "update_stamp": "2019-12-31T05:41:48.582Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--12/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 12,
+                "_id": "5e0ad3a94d2267003253100e",
+                "title": "sample ",
+                "description": "gawaw arf ",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767847248",
+                "title_url": "sample-",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767847248_converted.jpg",
+                "original_name": "Screenshot from 2019-11-09 10-53-55.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:50:49.211Z",
+                "update_stamp": "2019-12-31T05:41:46.387Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample-/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf8d4d22670032531035",
+                "title": "sample -11",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770891815",
+                "title_url": "sample--11",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770891815_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:41:33.951Z",
+                "update_stamp": "2019-12-31T05:41:33.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--11/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf434d22670032531033",
+                "title": "sample -10",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770817236",
+                "title_url": "sample--10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770817236_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:40:19.365Z",
+                "update_stamp": "2019-12-31T05:40:19.374Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf274d22670032531031",
+                "title": "flower-5",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577770788734",
+                "title_url": "flower-5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770788734_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:39:51.104Z",
+                "update_stamp": "2019-12-31T05:39:51.110Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 5,
+                "_id": "5e0ad3034d2267003253100c",
+                "title": "flower",
+                "description": "flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767678424",
+                "title_url": "flower",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767678424_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:48:03.071Z",
+                "update_stamp": "2019-12-31T05:39:48.746Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf127eb5e30033984683",
+                "title": "sample -9",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770767610",
+                "title_url": "sample--9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770767610_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:39:30.862Z",
+                "update_stamp": "2019-12-31T05:39:30.873Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad95f4d2267003253101d",
+                "title": "ButterflyBird",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770746317",
+                "title_url": "butterflybird",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770746317_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:15:11.495Z",
+                "update_stamp": "2019-12-31T05:39:08.406Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterflybird/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adee34d22670032531030",
+                "title": "sample -8",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770721847",
+                "title_url": "sample--8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770721847_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:38:43.973Z",
+                "update_stamp": "2019-12-31T05:38:43.977Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adecc4d2267003253102f",
+                "title": "sample -7",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770698779",
+                "title_url": "sample--7",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770698779_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:38:20.892Z",
+                "update_stamp": "2019-12-31T05:38:20.896Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--7/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad80a4d2267003253101b",
+                "title": "god ganesha",
+                "description": "new images of ganesha",
+                "redirect_link": "www.facebook.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577770455713",
+                "title_url": "god-ganesha",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770455713_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:09:30.338Z",
+                "update_stamp": "2019-12-31T05:34:17.528Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/god-ganesha/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adda14d2267003253102e",
+                "title": "Democode-3",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577770399709",
+                "title_url": "democode-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770399709_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:33:21.964Z",
+                "update_stamp": "2019-12-31T05:33:21.970Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 3,
+                "_id": "5e09f7f64d22670032530fef",
+                "title": "Democode",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577711604573",
+                "title_url": "democode",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577711604573_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T13:13:26.812Z",
+                "update_stamp": "2019-12-31T05:33:19.720Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add814d2267003253102d",
+                "title": "Global Warming-3",
+                "description": "Project on global warming with images",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770367225",
+                "title_url": "global-warming-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770367225_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T05:32:49.243Z",
+                "update_stamp": "2019-12-31T05:32:49.251Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 3,
+                "_id": "5e09df7b4d22670032530fcf",
+                "title": "Global Warming",
+                "description": "global warming images for project",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577705337477",
+                "title_url": "global-warming",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577705337477_converted.jpg",
+                "original_name": "image.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T11:28:59.284Z",
+                "update_stamp": "2019-12-31T05:32:47.233Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add5b4d2267003253102c",
+                "title": "Global Warming-2",
+                "description": "Project on global warming with images",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770329784",
+                "title_url": "global-warming-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770329784_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T05:32:11.821Z",
+                "update_stamp": "2019-12-31T05:32:11.827Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add594d2267003253102b",
+                "title": "sample -6",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770327404",
+                "title_url": "sample--6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770327404_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:32:09.522Z",
+                "update_stamp": "2019-12-31T05:32:09.533Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adcf74d22670032531029",
+                "title": "sample -5",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770229812",
+                "title_url": "sample--5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770229812_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:30:31.892Z",
+                "update_stamp": "2019-12-31T05:30:31.897Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adccb4d22670032531028",
+                "title": "Butterfly-13",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770185673",
+                "title_url": "butterfly-13",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770185673_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:29:47.688Z",
+                "update_stamp": "2019-12-31T05:29:47.694Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-13/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc754d22670032531027",
+                "title": "Butterfly-12",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770099219",
+                "title_url": "butterfly-12",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770099219_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:28:21.248Z",
+                "update_stamp": "2019-12-31T05:28:21.253Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-12/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc634d22670032531026",
+                "title": "Butterfly-11",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770081409",
+                "title_url": "butterfly-11",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770081409_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:28:03.481Z",
+                "update_stamp": "2019-12-31T05:28:03.485Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-11/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc4c4d22670032531025",
+                "title": "Butterfly-10",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770058225",
+                "title_url": "butterfly-10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770058225_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:27:40.248Z",
+                "update_stamp": "2019-12-31T05:27:40.256Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc314d22670032531024",
+                "title": "Butterfly-9",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770031162",
+                "title_url": "butterfly-9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770031162_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:27:13.312Z",
+                "update_stamp": "2019-12-31T05:27:13.322Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0acf3f4d22670032531002",
+                "title": "Demo",
+                "description": "cfdvfcdeacvfavf dsvdsv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577770009791",
+                "title_url": "demo",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770009791_converted.jpg",
+                "original_name": "Screenshot from 2019-06-20 19-08-26.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:31:59.933Z",
+                "update_stamp": "2019-12-31T05:26:52.936Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adbfaf63a0500329faa3e",
+                "title": "Butterfly-8",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577769976357",
+                "title_url": "butterfly-8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769976357_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:26:18.443Z",
+                "update_stamp": "2019-12-31T05:26:18.451Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adb11f63a0500329faa3d",
+                "title": "flower-4",
+                "description": "rose flower",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769741073",
+                "title_url": "flower-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769741073_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:22:25.247Z",
+                "update_stamp": "2019-12-31T05:22:25.298Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada954d22670032531023",
+                "title": "sample -4",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577769619429",
+                "title_url": "sample--4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769619429_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:20:21.535Z",
+                "update_stamp": "2019-12-31T05:20:21.539Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada684d22670032531022",
+                "title": "Image of Nature-1",
+                "description": "Beautiful Image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769573346",
+                "title_url": "image-of-nature-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769573346_converted.jpg",
+                "original_name": "antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:19:36.576Z",
+                "update_stamp": "2019-12-31T05:19:36.590Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-of-nature-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e0ada544d22670032531021",
+                "title": "Image of Nature",
+                "description": "Beautiful Image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769552903",
+                "title_url": "image-of-nature",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769552903_converted.jpg",
+                "original_name": "antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:19:16.144Z",
+                "update_stamp": "2019-12-31T05:19:33.419Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-of-nature/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada1f4d22670032531020",
+                "title": "ganesh-6",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577769502107",
+                "title_url": "ganesh-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769502107_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:18:23.824Z",
+                "update_stamp": "2019-12-31T05:18:23.828Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 6,
+                "_id": "5e09d1134d22670032530faa",
+                "title": "Ganesh",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577701648436",
+                "title_url": "ganesh",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577701648436_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T10:27:31.744Z",
+                "update_stamp": "2019-12-31T05:18:22.114Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada004d2267003253101f",
+                "title": "sample -3",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577769470327",
+                "title_url": "sample--3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769470327_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:17:52.542Z",
+                "update_stamp": "2019-12-31T05:17:52.546Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad9864d2267003253101e",
+                "title": "ganeshji-10",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577769348817",
+                "title_url": "ganeshji-10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769348817_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:15:50.961Z",
+                "update_stamp": "2019-12-31T05:15:50.969Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 10,
+                "_id": "5e0ad2084d22670032531007",
+                "title": "ganeshji",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767430510",
+                "title_url": "ganeshji",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767430510_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:43:52.607Z",
+                "update_stamp": "2019-12-31T05:15:48.828Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad8d54d2267003253101c",
+                "title": "flower-3",
+                "description": "rose flower",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769171128",
+                "title_url": "flower-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769171128_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:12:53.565Z",
+                "update_stamp": "2019-12-31T05:12:53.568Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad7c04d2267003253101a",
+                "title": "ganeshji-9",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768894519",
+                "title_url": "ganeshji-9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768894519_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:08:16.598Z",
+                "update_stamp": "2019-12-31T05:08:16.602Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad7994d22670032531019",
+                "title": "ganesh-4",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768856047",
+                "title_url": "ganesh-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768856047_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:07:37.776Z",
+                "update_stamp": "2019-12-31T05:07:37.780Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad75d4d22670032531018",
+                "title": "ganeshji-8",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768794956",
+                "title_url": "ganeshji-8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768794956_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:06:37.133Z",
+                "update_stamp": "2019-12-31T05:06:37.137Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad6c14d22670032531017",
+                "title": "ganeshji-7",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768638915",
+                "title_url": "ganeshji-7",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768638915_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:04:01.083Z",
+                "update_stamp": "2019-12-31T05:04:01.087Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-7/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5ff4d22670032531016",
+                "title": "sample -2",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577768445677",
+                "title_url": "sample--2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768445677_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:00:47.823Z",
+                "update_stamp": "2019-12-31T05:00:47.827Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5e14d22670032531015",
+                "title": "ganeshji-6",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768415413",
+                "title_url": "ganeshji-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768415413_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:00:17.571Z",
+                "update_stamp": "2019-12-31T05:00:17.579Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5cf4d22670032531014",
+                "title": "sample -1",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577768395445",
+                "title_url": "sample--1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768395445_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T04:59:59.060Z",
+                "update_stamp": "2019-12-31T04:59:59.064Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5574d22670032531013",
+                "title": "ganeshji-5",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768276662",
+                "title_url": "ganeshji-5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768276662_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:57:59.125Z",
+                "update_stamp": "2019-12-31T04:57:59.131Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad54e4d22670032531012",
+                "title": "ganesh-3",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768267649",
+                "title_url": "ganesh-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768267649_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:57:50.931Z",
+                "update_stamp": "2019-12-31T04:57:50.962Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5314d22670032531011",
+                "title": "ganeshji-4",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768238926",
+                "title_url": "ganeshji-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768238926_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:57:21.585Z",
+                "update_stamp": "2019-12-31T04:57:21.597Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad50f4d22670032531010",
+                "title": "ganesh-2",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768205262",
+                "title_url": "ganesh-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768205262_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:56:47.327Z",
+                "update_stamp": "2019-12-31T04:56:47.332Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad494e872320037b4094f",
+                "title": "Ganesh-1",
+                "description": "Ganeshaji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768080795",
+                "title_url": "ganesh-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768080795_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:54:44.015Z",
+                "update_stamp": "2019-12-31T04:54:44.023Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad47ad256c40032f19178",
+                "title": "Democode-2",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577768056791",
+                "title_url": "democode-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768056791_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:54:18.971Z",
+                "update_stamp": "2019-12-31T04:54:18.977Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad42bd256c40032f19177",
+                "title": "ganeshji-3",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767977461",
+                "title_url": "ganeshji-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767977461_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:52:59.675Z",
+                "update_stamp": "2019-12-31T04:52:59.683Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad3b1d256c40032f19176",
+                "title": "flower-2",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767854162",
+                "title_url": "flower-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767854162_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:50:57.950Z",
+                "update_stamp": "2019-12-31T04:50:57.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad3504d2267003253100d",
+                "title": "flower-1",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767743993",
+                "title_url": "flower-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767743993_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:49:20.094Z",
+                "update_stamp": "2019-12-31T04:49:20.158Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad2f04d2267003253100b",
+                "title": "ganeshji-2",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767661934",
+                "title_url": "ganeshji-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767661934_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:47:44.032Z",
+                "update_stamp": "2019-12-31T04:47:44.036Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad2994d2267003253100a",
+                "title": "ganeshji-1",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767575239",
+                "title_url": "ganeshji-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767575239_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:46:17.404Z",
+                "update_stamp": "2019-12-31T04:46:17.407Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad1aa4d22670032531005",
+                "title": "Butterfly-6",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767336429",
+                "title_url": "butterfly-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767336429_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:42:18.497Z",
+                "update_stamp": "2019-12-31T04:42:18.501Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad18a4d22670032531004",
+                "title": "moodAnalyser",
+                "description": "ghdhhvbcv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767304339",
+                "title_url": "moodanalyser",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767304339_converted.jpg",
+                "original_name": "MoodAnalyserTest.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:41:46.239Z",
+                "update_stamp": "2019-12-31T04:41:46.245Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/moodanalyser/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e0acf234d22670032531001",
+                "title": "Demo test",
+                "description": "cfdvfcdeacvfavf dsvdsv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "image_timestamp": "1577766688883",
+                "title_url": "demo-test",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577766688883_converted.jpg",
+                "original_name": "Screenshot from 2019-12-30 17-09-27.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:31:31.140Z",
+                "update_stamp": "2019-12-31T04:31:57.803Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-test/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a05e54d22670032531000",
+                "title": "Ganeshsdf-3",
+                "description": "Ganesh",
+                "redirect_link": "fghfhnvfghn",
+                "image_timestamp": "1577715171690",
+                "title_url": "ganeshsdf-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715171690_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:12:53.442Z",
+                "update_stamp": "2019-12-30T14:12:53.446Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 3,
+                "_id": "5e0a006a4d22670032530ff8",
+                "title": "Ganeshsdf",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577713766663",
+                "title_url": "ganeshsdf",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577713766663_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T13:49:30.250Z",
+                "update_stamp": "2019-12-30T14:12:51.697Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a05bc4d22670032530fff",
+                "title": "Ganeshsdf-2",
+                "description": "Ganesh",
+                "redirect_link": "fghfhnvfghn",
+                "image_timestamp": "1577715130712",
+                "title_url": "ganeshsdf-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715130712_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:12:12.470Z",
+                "update_stamp": "2019-12-30T14:12:12.478Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a059e4d22670032530ffe",
+                "title": "Ganeshsdf-1",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577715100385",
+                "title_url": "ganeshsdf-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715100385_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:11:42.111Z",
+                "update_stamp": "2019-12-30T14:11:42.116Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a00c14d22670032530ff9",
+                "title": "image-1",
+                "description": "screen shot",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577713855218",
+                "title_url": "image-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577713855218_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T13:50:57.358Z",
+                "update_stamp": "2019-12-30T13:50:57.364Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e09a1704d22670032530f49",
+                "title": "image",
+                "description": "Screen Shot",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577689453923",
+                "title_url": "image",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577689453923_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T07:04:16.226Z",
+                "update_stamp": "2019-12-30T13:50:55.236Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f7fc4d22670032530ff0",
+                "title": "Democode-1",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577711610064",
+                "title_url": "democode-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577711610064_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T13:13:32.319Z",
+                "update_stamp": "2019-12-30T13:13:32.323Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f4cc4d22670032530fec",
+                "title": "Butterfly-4",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577710794569",
+                "title_url": "butterfly-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577710794569_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:59:56.612Z",
+                "update_stamp": "2019-12-30T12:59:56.618Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f4a24d22670032530feb",
+                "title": "Butterfly-3",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577710751038",
+                "title_url": "butterfly-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577710751038_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:59:14.738Z",
+                "update_stamp": "2019-12-30T12:59:14.753Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e8524d22670032530fea",
+                "title": "Butterfly-2",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577707600725",
+                "title_url": "butterfly-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577707600725_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:06:42.806Z",
+                "update_stamp": "2019-12-30T12:06:42.810Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e6b64d22670032530fe8",
+                "title": "Butterfly-1",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577707188069",
+                "title_url": "butterfly-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577707188069_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T11:59:50.114Z",
+                "update_stamp": "2019-12-30T11:59:50.128Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e3b14d22670032530fe4",
+                "title": "demo rest assured-1",
+                "description": "rest assured testing for practice purpose and dmeo demo",
+                "redirect_link": "https://www.guru99.com/postman-tutorial.html",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/n6gM265zG68",
+                "image_timestamp": "1577706414226",
+                "title_url": "demo-rest-assured-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577706414226_converted.jpg",
+                "original_name": "Screenshot from 2019-12-30 17-09-30.png",
+                "apply_redirect": false,
+                "youtube_id": "n6gM265zG68",
+                "creator_stamp": "2019-12-30T11:46:57.606Z",
+                "update_stamp": "2019-12-30T11:46:57.610Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-rest-assured-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": true,
+                "title_duplicate_counter": 1,
+                "_id": "5e09e1b24d22670032530fd2",
+                "title": "demo rest assured",
+                "description": "rest assured testing for practice purpose and dmeo demo",
+                "redirect_link": "https://www.guru99.com/postman-tutorial.html",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/n6gM265zG68",
+                "image_timestamp": "1577705903932",
+                "title_url": "demo-rest-assured",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577705903932_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "n6gM265zG68",
+                "creator_stamp": "2019-12-30T11:38:26.689Z",
+                "update_stamp": "2019-12-30T11:46:54.236Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-rest-assured/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09a1d54d22670032530f4b",
+                "title": "screenshot",
+                "description": "abc",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577691353702",
+                "title_url": "screenshot",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577691353702_converted.jpg",
+                "original_name": "Screenshot from 2019-12-09 18-00-31.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T07:05:57.976Z",
+                "update_stamp": "2019-12-30T07:35:57.213Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/screenshot/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e09a19c4d22670032530f4a",
+                "title": "i",
+                "description": "S",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577689498611",
+                "title_url": "i",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577689498611_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T07:05:00.766Z",
+                "update_stamp": "2019-12-30T07:05:55.896Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/i/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e098a684d22670032530f2b",
+                "title": "rest assured testing for practice",
+                "description": "rest assured testing for practice purpose and dmeo",
+                "redirect_link": "https://dzone.com/articles/testing-apis-with-postman",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "image_timestamp": "1577683555005",
+                "title_url": "rest-assured-testing-for-practice",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577683555005_converted.jpg",
+                "original_name": "Screenshot from 2019-06-20 17-13-15.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-30T05:26:00.056Z",
+                "update_stamp": "2019-12-30T05:26:00.065Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/rest-assured-testing-for-practice/0"
+            },
+            "hashData": [
+                
+            ]
+        }
+    ]
 }
 {
     "status": true,
-    "message": "Redirect updated Successfully",
-    "data": {
-        "n": 1,
-        "nModified": 1,
-        "ok": 1
-    }
+    "message": "All Redirects retrieved Successfully",
+    "data": [
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 16,
+                "_id": "5e09e5a64d22670032530fe7",
+                "title": "Butterfly",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577706916450",
+                "title_url": "butterfly",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577706916450_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T11:55:18.626Z",
+                "update_stamp": "2019-12-31T05:42:35.129Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0acfbf4d22670032531003",
+                "title": "image changed",
+                "description": "set different image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770912973",
+                "title_url": "image-changed",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770912973_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T04:34:07.758Z",
+                "update_stamp": "2019-12-31T05:41:54.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-changed/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf9c4d22670032531036",
+                "title": "sample -12",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770906381",
+                "title_url": "sample--12",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770906381_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:41:48.576Z",
+                "update_stamp": "2019-12-31T05:41:48.582Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--12/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 12,
+                "_id": "5e0ad3a94d2267003253100e",
+                "title": "sample ",
+                "description": "gawaw arf ",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767847248",
+                "title_url": "sample-",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767847248_converted.jpg",
+                "original_name": "Screenshot from 2019-11-09 10-53-55.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:50:49.211Z",
+                "update_stamp": "2019-12-31T05:41:46.387Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample-/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf8d4d22670032531035",
+                "title": "sample -11",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770891815",
+                "title_url": "sample--11",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770891815_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:41:33.951Z",
+                "update_stamp": "2019-12-31T05:41:33.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--11/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf434d22670032531033",
+                "title": "sample -10",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770817236",
+                "title_url": "sample--10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770817236_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:40:19.365Z",
+                "update_stamp": "2019-12-31T05:40:19.374Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf274d22670032531031",
+                "title": "flower-5",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577770788734",
+                "title_url": "flower-5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770788734_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:39:51.104Z",
+                "update_stamp": "2019-12-31T05:39:51.110Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 5,
+                "_id": "5e0ad3034d2267003253100c",
+                "title": "flower",
+                "description": "flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767678424",
+                "title_url": "flower",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767678424_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:48:03.071Z",
+                "update_stamp": "2019-12-31T05:39:48.746Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adf127eb5e30033984683",
+                "title": "sample -9",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770767610",
+                "title_url": "sample--9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770767610_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:39:30.862Z",
+                "update_stamp": "2019-12-31T05:39:30.873Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad95f4d2267003253101d",
+                "title": "ButterflyBird",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770746317",
+                "title_url": "butterflybird",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770746317_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:15:11.495Z",
+                "update_stamp": "2019-12-31T05:39:08.406Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterflybird/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adee34d22670032531030",
+                "title": "sample -8",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770721847",
+                "title_url": "sample--8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770721847_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:38:43.973Z",
+                "update_stamp": "2019-12-31T05:38:43.977Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adecc4d2267003253102f",
+                "title": "sample -7",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770698779",
+                "title_url": "sample--7",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770698779_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:38:20.892Z",
+                "update_stamp": "2019-12-31T05:38:20.896Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--7/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad80a4d2267003253101b",
+                "title": "god ganesha",
+                "description": "new images of ganesha",
+                "redirect_link": "www.facebook.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577770455713",
+                "title_url": "god-ganesha",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770455713_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:09:30.338Z",
+                "update_stamp": "2019-12-31T05:34:17.528Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/god-ganesha/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adda14d2267003253102e",
+                "title": "Democode-3",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577770399709",
+                "title_url": "democode-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770399709_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:33:21.964Z",
+                "update_stamp": "2019-12-31T05:33:21.970Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 3,
+                "_id": "5e09f7f64d22670032530fef",
+                "title": "Democode",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577711604573",
+                "title_url": "democode",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577711604573_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T13:13:26.812Z",
+                "update_stamp": "2019-12-31T05:33:19.720Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add814d2267003253102d",
+                "title": "Global Warming-3",
+                "description": "Project on global warming with images",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770367225",
+                "title_url": "global-warming-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770367225_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T05:32:49.243Z",
+                "update_stamp": "2019-12-31T05:32:49.251Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 3,
+                "_id": "5e09df7b4d22670032530fcf",
+                "title": "Global Warming",
+                "description": "global warming images for project",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577705337477",
+                "title_url": "global-warming",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577705337477_converted.jpg",
+                "original_name": "image.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T11:28:59.284Z",
+                "update_stamp": "2019-12-31T05:32:47.233Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add5b4d2267003253102c",
+                "title": "Global Warming-2",
+                "description": "Project on global warming with images",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577770329784",
+                "title_url": "global-warming-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770329784_converted.jpg",
+                "original_name": "example.jpeg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-31T05:32:11.821Z",
+                "update_stamp": "2019-12-31T05:32:11.827Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/global-warming-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0add594d2267003253102b",
+                "title": "sample -6",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770327404",
+                "title_url": "sample--6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770327404_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:32:09.522Z",
+                "update_stamp": "2019-12-31T05:32:09.533Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adcf74d22670032531029",
+                "title": "sample -5",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577770229812",
+                "title_url": "sample--5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770229812_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:30:31.892Z",
+                "update_stamp": "2019-12-31T05:30:31.897Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adccb4d22670032531028",
+                "title": "Butterfly-13",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770185673",
+                "title_url": "butterfly-13",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770185673_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:29:47.688Z",
+                "update_stamp": "2019-12-31T05:29:47.694Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-13/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc754d22670032531027",
+                "title": "Butterfly-12",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770099219",
+                "title_url": "butterfly-12",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770099219_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:28:21.248Z",
+                "update_stamp": "2019-12-31T05:28:21.253Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-12/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc634d22670032531026",
+                "title": "Butterfly-11",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770081409",
+                "title_url": "butterfly-11",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770081409_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:28:03.481Z",
+                "update_stamp": "2019-12-31T05:28:03.485Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-11/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc4c4d22670032531025",
+                "title": "Butterfly-10",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770058225",
+                "title_url": "butterfly-10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770058225_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:27:40.248Z",
+                "update_stamp": "2019-12-31T05:27:40.256Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adc314d22670032531024",
+                "title": "Butterfly-9",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577770031162",
+                "title_url": "butterfly-9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770031162_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:27:13.312Z",
+                "update_stamp": "2019-12-31T05:27:13.322Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0acf3f4d22670032531002",
+                "title": "Demo",
+                "description": "cfdvfcdeacvfavf dsvdsv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577770009791",
+                "title_url": "demo",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577770009791_converted.jpg",
+                "original_name": "Screenshot from 2019-06-20 19-08-26.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:31:59.933Z",
+                "update_stamp": "2019-12-31T05:26:52.936Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adbfaf63a0500329faa3e",
+                "title": "Butterfly-8",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577769976357",
+                "title_url": "butterfly-8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769976357_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-31T05:26:18.443Z",
+                "update_stamp": "2019-12-31T05:26:18.451Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0adb11f63a0500329faa3d",
+                "title": "flower-4",
+                "description": "rose flower",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769741073",
+                "title_url": "flower-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769741073_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:22:25.247Z",
+                "update_stamp": "2019-12-31T05:22:25.298Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada954d22670032531023",
+                "title": "sample -4",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577769619429",
+                "title_url": "sample--4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769619429_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:20:21.535Z",
+                "update_stamp": "2019-12-31T05:20:21.539Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada684d22670032531022",
+                "title": "Image of Nature-1",
+                "description": "Beautiful Image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769573346",
+                "title_url": "image-of-nature-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769573346_converted.jpg",
+                "original_name": "antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:19:36.576Z",
+                "update_stamp": "2019-12-31T05:19:36.590Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-of-nature-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e0ada544d22670032531021",
+                "title": "Image of Nature",
+                "description": "Beautiful Image",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769552903",
+                "title_url": "image-of-nature",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769552903_converted.jpg",
+                "original_name": "antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:19:16.144Z",
+                "update_stamp": "2019-12-31T05:19:33.419Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-of-nature/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada1f4d22670032531020",
+                "title": "ganesh-6",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577769502107",
+                "title_url": "ganesh-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769502107_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:18:23.824Z",
+                "update_stamp": "2019-12-31T05:18:23.828Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 6,
+                "_id": "5e09d1134d22670032530faa",
+                "title": "Ganesh",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577701648436",
+                "title_url": "ganesh",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577701648436_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T10:27:31.744Z",
+                "update_stamp": "2019-12-31T05:18:22.114Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ada004d2267003253101f",
+                "title": "sample -3",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577769470327",
+                "title_url": "sample--3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769470327_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:17:52.542Z",
+                "update_stamp": "2019-12-31T05:17:52.546Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad9864d2267003253101e",
+                "title": "ganeshji-10",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577769348817",
+                "title_url": "ganeshji-10",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769348817_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:15:50.961Z",
+                "update_stamp": "2019-12-31T05:15:50.969Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-10/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 10,
+                "_id": "5e0ad2084d22670032531007",
+                "title": "ganeshji",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767430510",
+                "title_url": "ganeshji",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767430510_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:43:52.607Z",
+                "update_stamp": "2019-12-31T05:15:48.828Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad8d54d2267003253101c",
+                "title": "flower-3",
+                "description": "rose flower",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577769171128",
+                "title_url": "flower-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577769171128_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T05:12:53.565Z",
+                "update_stamp": "2019-12-31T05:12:53.568Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad7c04d2267003253101a",
+                "title": "ganeshji-9",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768894519",
+                "title_url": "ganeshji-9",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768894519_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:08:16.598Z",
+                "update_stamp": "2019-12-31T05:08:16.602Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-9/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad7994d22670032531019",
+                "title": "ganesh-4",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768856047",
+                "title_url": "ganesh-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768856047_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T05:07:37.776Z",
+                "update_stamp": "2019-12-31T05:07:37.780Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad75d4d22670032531018",
+                "title": "ganeshji-8",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768794956",
+                "title_url": "ganeshji-8",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768794956_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:06:37.133Z",
+                "update_stamp": "2019-12-31T05:06:37.137Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-8/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad6c14d22670032531017",
+                "title": "ganeshji-7",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768638915",
+                "title_url": "ganeshji-7",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768638915_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:04:01.083Z",
+                "update_stamp": "2019-12-31T05:04:01.087Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-7/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5ff4d22670032531016",
+                "title": "sample -2",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577768445677",
+                "title_url": "sample--2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768445677_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T05:00:47.823Z",
+                "update_stamp": "2019-12-31T05:00:47.827Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5e14d22670032531015",
+                "title": "ganeshji-6",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768415413",
+                "title_url": "ganeshji-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768415413_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T05:00:17.571Z",
+                "update_stamp": "2019-12-31T05:00:17.579Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5cf4d22670032531014",
+                "title": "sample -1",
+                "description": "gawaw arf",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/false",
+                "image_timestamp": "1577768395445",
+                "title_url": "sample--1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768395445_converted.jpg",
+                "original_name": "Screenshot from 2019-12-26 18-52-05.png",
+                "apply_redirect": false,
+                "youtube_id": "false",
+                "creator_stamp": "2019-12-31T04:59:59.060Z",
+                "update_stamp": "2019-12-31T04:59:59.064Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/sample--1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5574d22670032531013",
+                "title": "ganeshji-5",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768276662",
+                "title_url": "ganeshji-5",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768276662_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:57:59.125Z",
+                "update_stamp": "2019-12-31T04:57:59.131Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-5/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad54e4d22670032531012",
+                "title": "ganesh-3",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768267649",
+                "title_url": "ganesh-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768267649_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:57:50.931Z",
+                "update_stamp": "2019-12-31T04:57:50.962Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad5314d22670032531011",
+                "title": "ganeshji-4",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577768238926",
+                "title_url": "ganeshji-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768238926_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:57:21.585Z",
+                "update_stamp": "2019-12-31T04:57:21.597Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad50f4d22670032531010",
+                "title": "ganesh-2",
+                "description": "ganeshji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768205262",
+                "title_url": "ganesh-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768205262_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:56:47.327Z",
+                "update_stamp": "2019-12-31T04:56:47.332Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad494e872320037b4094f",
+                "title": "Ganesh-1",
+                "description": "Ganeshaji",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/QKKMxboJMcw",
+                "video_link": "https://www.youtube.com/watch?v=QKKMxboJMcw",
+                "image_timestamp": "1577768080795",
+                "title_url": "ganesh-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768080795_converted.jpg",
+                "original_name": "ganeshJi",
+                "apply_redirect": false,
+                "youtube_id": "QKKMxboJMcw",
+                "creator_stamp": "2019-12-31T04:54:44.015Z",
+                "update_stamp": "2019-12-31T04:54:44.023Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganesh-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad47ad256c40032f19178",
+                "title": "Democode-2",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577768056791",
+                "title_url": "democode-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577768056791_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:54:18.971Z",
+                "update_stamp": "2019-12-31T04:54:18.977Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad42bd256c40032f19177",
+                "title": "ganeshji-3",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767977461",
+                "title_url": "ganeshji-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767977461_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:52:59.675Z",
+                "update_stamp": "2019-12-31T04:52:59.683Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad3b1d256c40032f19176",
+                "title": "flower-2",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767854162",
+                "title_url": "flower-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767854162_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:50:57.950Z",
+                "update_stamp": "2019-12-31T04:50:57.963Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad3504d2267003253100d",
+                "title": "flower-1",
+                "description": "rose flower",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767743993",
+                "title_url": "flower-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767743993_converted.jpg",
+                "original_name": "red-garden-plant-green-56866.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:49:20.094Z",
+                "update_stamp": "2019-12-31T04:49:20.158Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/flower-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad2f04d2267003253100b",
+                "title": "ganeshji-2",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767661934",
+                "title_url": "ganeshji-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767661934_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:47:44.032Z",
+                "update_stamp": "2019-12-31T04:47:44.036Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad2994d2267003253100a",
+                "title": "ganeshji-1",
+                "description": "goddemo ganesh",
+                "redirect_link": "https://www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "video_link": "https://www.youtube.com/watch?v=yDdBOspPp_c",
+                "image_timestamp": "1577767575239",
+                "title_url": "ganeshji-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767575239_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:46:17.404Z",
+                "update_stamp": "2019-12-31T04:46:17.407Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshji-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad1aa4d22670032531005",
+                "title": "Butterfly-6",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767336429",
+                "title_url": "butterfly-6",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767336429_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:42:18.497Z",
+                "update_stamp": "2019-12-31T04:42:18.501Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-6/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0ad18a4d22670032531004",
+                "title": "moodAnalyser",
+                "description": "ghdhhvbcv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577767304339",
+                "title_url": "moodanalyser",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577767304339_converted.jpg",
+                "original_name": "MoodAnalyserTest.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-31T04:41:46.239Z",
+                "update_stamp": "2019-12-31T04:41:46.245Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/moodanalyser/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e0acf234d22670032531001",
+                "title": "Demo test",
+                "description": "cfdvfcdeacvfavf dsvdsv",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "image_timestamp": "1577766688883",
+                "title_url": "demo-test",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577766688883_converted.jpg",
+                "original_name": "Screenshot from 2019-12-30 17-09-27.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-31T04:31:31.140Z",
+                "update_stamp": "2019-12-31T04:31:57.803Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-test/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a05e54d22670032531000",
+                "title": "Ganeshsdf-3",
+                "description": "Ganesh",
+                "redirect_link": "fghfhnvfghn",
+                "image_timestamp": "1577715171690",
+                "title_url": "ganeshsdf-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715171690_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:12:53.442Z",
+                "update_stamp": "2019-12-30T14:12:53.446Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 3,
+                "_id": "5e0a006a4d22670032530ff8",
+                "title": "Ganeshsdf",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/www.google.com",
+                "video_link": "www.google.com",
+                "image_timestamp": "1577713766663",
+                "title_url": "ganeshsdf",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577713766663_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_id": "www.google.com",
+                "creator_stamp": "2019-12-30T13:49:30.250Z",
+                "update_stamp": "2019-12-30T14:12:51.697Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a05bc4d22670032530fff",
+                "title": "Ganeshsdf-2",
+                "description": "Ganesh",
+                "redirect_link": "fghfhnvfghn",
+                "image_timestamp": "1577715130712",
+                "title_url": "ganeshsdf-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715130712_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:12:12.470Z",
+                "update_stamp": "2019-12-30T14:12:12.478Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a059e4d22670032530ffe",
+                "title": "Ganeshsdf-1",
+                "description": "Ganesh",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577715100385",
+                "title_url": "ganeshsdf-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577715100385_converted.jpg",
+                "original_name": "Ananda.jpg",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T14:11:42.111Z",
+                "update_stamp": "2019-12-30T14:11:42.116Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/ganeshsdf-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e0a00c14d22670032530ff9",
+                "title": "image-1",
+                "description": "screen shot",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577713855218",
+                "title_url": "image-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577713855218_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T13:50:57.358Z",
+                "update_stamp": "2019-12-30T13:50:57.364Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e09a1704d22670032530f49",
+                "title": "image",
+                "description": "Screen Shot",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577689453923",
+                "title_url": "image",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577689453923_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T07:04:16.226Z",
+                "update_stamp": "2019-12-30T13:50:55.236Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/image/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f7fc4d22670032530ff0",
+                "title": "Democode-1",
+                "description": "Demo  code image for tdd presentation",
+                "redirect_link": "https://fundoopush-backend-dev.bridgelabz.com/api/#/user/login",
+                "youtube_flag": false,
+                "image_timestamp": "1577711610064",
+                "title_url": "democode-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577711610064_converted.jpg",
+                "original_name": "2019-12-12.jpg",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T13:13:32.319Z",
+                "update_stamp": "2019-12-30T13:13:32.323Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/democode-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f4cc4d22670032530fec",
+                "title": "Butterfly-4",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577710794569",
+                "title_url": "butterfly-4",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577710794569_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:59:56.612Z",
+                "update_stamp": "2019-12-30T12:59:56.618Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-4/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09f4a24d22670032530feb",
+                "title": "Butterfly-3",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577710751038",
+                "title_url": "butterfly-3",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577710751038_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:59:14.738Z",
+                "update_stamp": "2019-12-30T12:59:14.753Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-3/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e8524d22670032530fea",
+                "title": "Butterfly-2",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577707600725",
+                "title_url": "butterfly-2",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577707600725_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T12:06:42.806Z",
+                "update_stamp": "2019-12-30T12:06:42.810Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-2/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e6b64d22670032530fe8",
+                "title": "Butterfly-1",
+                "description": "ButterflyPicture",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577707188069",
+                "title_url": "butterfly-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577707188069_converted.jpg",
+                "original_name": "Firefox_wallpaper.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T11:59:50.114Z",
+                "update_stamp": "2019-12-30T11:59:50.128Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/butterfly-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09e3b14d22670032530fe4",
+                "title": "demo rest assured-1",
+                "description": "rest assured testing for practice purpose and dmeo demo",
+                "redirect_link": "https://www.guru99.com/postman-tutorial.html",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/n6gM265zG68",
+                "image_timestamp": "1577706414226",
+                "title_url": "demo-rest-assured-1",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577706414226_converted.jpg",
+                "original_name": "Screenshot from 2019-12-30 17-09-30.png",
+                "apply_redirect": false,
+                "youtube_id": "n6gM265zG68",
+                "creator_stamp": "2019-12-30T11:46:57.606Z",
+                "update_stamp": "2019-12-30T11:46:57.610Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-rest-assured-1/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": true,
+                "title_duplicate_counter": 1,
+                "_id": "5e09e1b24d22670032530fd2",
+                "title": "demo rest assured",
+                "description": "rest assured testing for practice purpose and dmeo demo",
+                "redirect_link": "https://www.guru99.com/postman-tutorial.html",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/n6gM265zG68",
+                "image_timestamp": "1577705903932",
+                "title_url": "demo-rest-assured",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577705903932_converted.jpg",
+                "original_name": "Screenshot from 2019-06-14 10-37-20.png",
+                "apply_redirect": false,
+                "youtube_id": "n6gM265zG68",
+                "creator_stamp": "2019-12-30T11:38:26.689Z",
+                "update_stamp": "2019-12-30T11:46:54.236Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/demo-rest-assured/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": true,
+                "title_duplicate_counter": 0,
+                "_id": "5e09a1d54d22670032530f4b",
+                "title": "screenshot",
+                "description": "abc",
+                "redirect_link": "www.google.com",
+                "youtube_flag": false,
+                "image_timestamp": "1577691353702",
+                "title_url": "screenshot",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577691353702_converted.jpg",
+                "original_name": "Screenshot from 2019-12-09 18-00-31.png",
+                "apply_redirect": false,
+                "creator_stamp": "2019-12-30T07:05:57.976Z",
+                "update_stamp": "2019-12-30T07:35:57.213Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/screenshot/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": false,
+                "archive": false,
+                "title_duplicate_counter": 1,
+                "_id": "5e09a19c4d22670032530f4a",
+                "title": "i",
+                "description": "S",
+                "redirect_link": "www.google.com",
+                "image_timestamp": "1577689498611",
+                "title_url": "i",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577689498611_converted.jpg",
+                "original_name": "Screenshot from 2019-12-06 15-26-22.png",
+                "apply_redirect": false,
+                "youtube_flag": false,
+                "creator_stamp": "2019-12-30T07:05:00.766Z",
+                "update_stamp": "2019-12-30T07:05:55.896Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/i/0"
+            },
+            "hashData": [
+                
+            ]
+        },
+        {
+            "resultData": {
+                "isDeleted": false,
+                "is_published": true,
+                "archive": false,
+                "title_duplicate_counter": 0,
+                "_id": "5e098a684d22670032530f2b",
+                "title": "rest assured testing for practice",
+                "description": "rest assured testing for practice purpose and dmeo",
+                "redirect_link": "https://dzone.com/articles/testing-apis-with-postman",
+                "youtube_flag": true,
+                "youtube_url": "https://www.youtube.com/embed/yDdBOspPp_c",
+                "image_timestamp": "1577683555005",
+                "title_url": "rest-assured-testing-for-practice",
+                "image": "https://d3esiao42e00bm.cloudfront.net/1577683555005_converted.jpg",
+                "original_name": "Screenshot from 2019-06-20 17-13-15.png",
+                "apply_redirect": false,
+                "youtube_id": "yDdBOspPp_c",
+                "creator_stamp": "2019-12-30T05:26:00.056Z",
+                "update_stamp": "2019-12-30T05:26:00.065Z",
+                "__v": 0,
+                "original_link": "https://fundoopush-backend-dev.bridgelabz.com/post/rest-assured-testing-for-practice/0"
+            },
+            "hashData": [
+                
+            ]
+        }
+    ]
 }
-Redirect Successfull...200
+Redirect successfull...200
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

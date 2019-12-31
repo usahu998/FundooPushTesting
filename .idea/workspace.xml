@@ -4,7 +4,6 @@
     <list default="true" id="ee452b8f-0aea-485c-b34d-391343b6be1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -69,13 +68,13 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRegistration.givenRedirectPUTApi_whenAllCredentialAreCorrect_shouldReturnCode">
-    <configuration name="UserRegistration.givenLogoutApi_WhenTokenIsIncorrect_ShouldReturnSuccessCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserRegistration.givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode">
+    <configuration name="UserRegistration.givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.fundoopush.UserRegistration.givenLogoutApi_WhenTokenIsIncorrect_ShouldReturnSuccessCode&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.fundoopush.UserRegistration.givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -90,12 +89,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRegistration.givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRegistration.givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.fundoopush.UserRegistration.givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.bridgelabz.fundoopush.UserRegistration.givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserRegistration.givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode" />
         <item itemvalue="Gradle.UserRegistration.givenRedirectPUTApi_whenAllCredentialAreCorrect_shouldReturnCode" />
         <item itemvalue="Gradle.UserRegistration.givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode" />
         <item itemvalue="Gradle.UserRegistration.submitForm" />
         <item itemvalue="Gradle.UserRegistration.givenRedirectPOSTApi_WhenCredientials_ShouldReturnStatusCode" />
-        <item itemvalue="Gradle.UserRegistration.givenLogoutApi_WhenTokenIsIncorrect_ShouldReturnSuccessCode" />
       </list>
     </recent_temporary>
   </component>
@@ -210,22 +209,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="847" height="677" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1577702432034" />
-    <state width="1253" height="2" key="GridCell.Tab.0.bottom" timestamp="1577770425541">
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom" timestamp="1577771053649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="2" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1577770425541" />
-    <state width="1253" height="2" key="GridCell.Tab.0.center" timestamp="1577770425541">
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1577771053649" />
+    <state width="1253" height="2" key="GridCell.Tab.0.center" timestamp="1577771053649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="2" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1577770425541" />
-    <state width="1253" height="2" key="GridCell.Tab.0.left" timestamp="1577770425540">
+    <state width="1253" height="2" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1577771053649" />
+    <state width="1253" height="2" key="GridCell.Tab.0.left" timestamp="1577771053649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="2" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1577770425540" />
-    <state width="1253" height="2" key="GridCell.Tab.0.right" timestamp="1577770425541">
+    <state width="1253" height="2" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1577771053649" />
+    <state width="1253" height="2" key="GridCell.Tab.0.right" timestamp="1577771053649">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="2" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1577770425541" />
+    <state width="1253" height="2" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1577771053649" />
     <state width="1253" height="218" key="GridCell.Tab.1.bottom" timestamp="1577714850757">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
