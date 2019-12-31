@@ -6,8 +6,12 @@ import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.io.File;
 
 import static io.restassured.RestAssured.given;
 
@@ -85,11 +89,8 @@ public class UserRegistration {
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/registration");
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(201, statusCode);       // response.then().body("id", Matchers.any(Integer.class));
+        Assert.assertEquals(201, statusCode);
     }
-/*
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc2OTg0MzIsImV4cCI6MTU3Nzc4NDgzMn0.vgRpy-SxVrMi9-C1aRGcXL2KPvPAVRZSkxn8zVPVvfs
-*/
 
     @Test
     public void givenEmailAndPassword_WhenCorrect_ShouldReturnSuccessCode() {
@@ -152,7 +153,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDA
                 .post("https://fundoopush-backend-dev.bridgelabz.com/logout");
         int statusCode = response.getStatusCode();
         System.out.println("Logged out successfully from the system : ");
-        Assert.assertEquals(200, statusCode);       // response.then().body("id", Matchers.any(Integer.class));
+        Assert.assertEquals(200, statusCode);
     }
 
     @Test
@@ -165,6 +166,30 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDA
                 .post("https://fundoopush-backend-dev.bridgelabz.com/logout");
         int statusCode = response.getStatusCode();
         System.out.println("Logout failed..." + statusCode);
-        Assert.assertEquals(500, statusCode);       // response.then().body("id", Matchers.any(Integer.class));
+        Assert.assertEquals(500, statusCode);
+    }
+
+    @Test
+    public void givenRedirectApi_whenAllCredentialAreCorrect_shouldReturnCode() {
+        File testUploadFile = new File("/home/admin1/IdeaProjects/FundooPush/src/test/resources/ganeshJi");
+        Response response = RestAssured.given()
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .multiPart("image", testUploadFile)
+                .formParam("title", "ganesh")
+                .formParam("description", "ganeshji")
+                .formParam("redirect_link", "www.google.com")
+                .formParam("is_published", false)
+                .formParam("archive", false)
+                .formParam("youtube_flag", false)
+                .formParam("youtube_url", "https://www.youtube.com/watch?v=QKKMxboJMcw")
+                .formParam("video_link", "https://www.youtube.com/watch?v=QKKMxboJMcw")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/redirects");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect Successfull..." + statusCode);
+        Assert.assertEquals(201, statusCode);
     }
 }
