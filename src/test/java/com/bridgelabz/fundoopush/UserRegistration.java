@@ -265,10 +265,60 @@ public class UserRegistration {
     @Test
     public void givenRedirectDELETEApi_WhenTokenAndIDAPIcorrect_ShouldReturnStatusCode() {
         Response response = given()
+                .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
                 .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"_id\":\"5e0ad80a4d2267003253101b\"}")
                 .when()
-                .get("https://fundoopush-backend-dev.bridgelabz.com/redirects1");
+                .post("https://fundoopush-backend-dev.bridgelabz.com/redirects/delete");
+                int statusCode = response.getStatusCode();
+                ResponseBody body = response.getBody();
+                System.out.println(body.prettyPrint());
+                 System.out.println("Redirect successfull..." + statusCode);
+                Assert.assertEquals(200, statusCode);
+    }
+
+    @Test
+    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIscorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"redirect_id\":\"5e0ad80a4d2267003253101b\",\"hashtag\":\"#bridgelabz #solutions #mumbai #bangalore #fundoopush\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/hashtag/edit");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
+    }
+
+    @Test
+    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIncorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"redirect_id\":\"5ed80a4d2267003253101b\",\"hashtag\":\"#bridgelabz #solutions #mumbai #bangalore #fundoopush\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/hashtag/edit");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(401, statusCode);
+    }
+
+    @Test
+    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIscorrectButAPI_Incorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"redirect_id\":\"5e0ad80a4d2267003253101b\",\"hashtag\":\"#bridgelabz #solutions #mumbai #bangalore #fundoopush\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/hashtag/edit123");
         int statusCode = response.getStatusCode();
         ResponseBody body = response.getBody();
         System.out.println(body.prettyPrint());
