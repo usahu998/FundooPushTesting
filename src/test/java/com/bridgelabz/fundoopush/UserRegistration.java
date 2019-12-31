@@ -271,15 +271,15 @@ public class UserRegistration {
                 .body("{\"_id\":\"5e0ad80a4d2267003253101b\"}")
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/redirects/delete");
-                int statusCode = response.getStatusCode();
-                ResponseBody body = response.getBody();
-                System.out.println(body.prettyPrint());
-                 System.out.println("Redirect successfull..." + statusCode);
-                Assert.assertEquals(200, statusCode);
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
     }
 
     @Test
-    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIscorrect_ShouldReturnStatusCode() {
+    public void givenHashTagEditPOSTApi_WhenTokenAndHashTagBodyIscorrect_ShouldReturnStatusCode() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -295,7 +295,7 @@ public class UserRegistration {
     }
 
     @Test
-    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIncorrect_ShouldReturnStatusCode() {
+    public void givenHashTagEditPOSTApi_WhenTokenAndHashTagBodyIncorrect_ShouldReturnStatusCode() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -311,7 +311,7 @@ public class UserRegistration {
     }
 
     @Test
-    public void givenHashTagEditApi_WhenTokenAndHashTagBodyIscorrectButAPI_Incorrect_ShouldReturnStatusCode() {
+    public void givenHashTagEditPOSTApi_WhenTokenAndHashTagBodyIscorrectButAPI_Incorrect_ShouldReturnStatusCode() {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -324,5 +324,95 @@ public class UserRegistration {
         System.out.println(body.prettyPrint());
         System.out.println("Redirect successfull..." + statusCode);
         Assert.assertEquals(404, statusCode);
+    }
+
+    @Test
+    public void givenHashTagEditGETApi_WhenTokenAndHashTagNameIscorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .pathParam("hashtagname", "#bridgelabz")
+                .when()
+                .get("https://fundoopush-backend-dev.bridgelabz.com/redirects/hashtag/{hashtagname}");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
+    }
+
+    @Test
+    public void givenHashTagEditGETApi_WhenTokenAndHashTagNameIscorrectButAPI_Incorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .pathParam("hashtagname", "#Mumbai")
+                .when()
+                .get("https://fundoopush-backend-dev.bridgelabz.com/redir/hashtag/{hashtagname}");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(404, statusCode);
+    }
+
+    @Test
+    public void givenHashTagSearchPOSTApi_WhenTokenAndHashTagbodyIscorrect_ShouldReturnStatusCode() throws ParseException {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"hashtag\":\"#bridgelabz\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/search/hashtag");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        // Assert.assertEquals(200, statusCode);
+
+        JSONObject object = (JSONObject) new JSONParser().parse(body.prettyPrint());
+        boolean status = (boolean) object.get("status");
+        String message = (String) object.get("message");
+
+        Assert.assertEquals(200, statusCode);
+        Assert.assertEquals("Successfully searched data", message);
+        Assert.assertTrue(status);
+    }
+
+    @Test
+    public void givenHashTagSearchPOSTApi_WhenHashTagbodyIsCorrectAndTokenIncorrect_ShouldReturnStatusCode() {
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "iOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .body("{\"hashtag\":\"#bridgelabz\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/search/hashtag");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect successfull..." + statusCode);
+        Assert.assertEquals(401, statusCode);
+    }
+
+    //Issus
+    @Test
+    public void givenJOBPOSTApi_whenAllCredentialAreCorrect_shouldReturnCode() {
+        Response response = RestAssured.given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .when()
+                .body("{\"redirect_id\":\"5e09d4b74d22670032530fbe\",\"years_of_experience\":\"12\",\"salary\":\"35.6\"," +
+                        "\"location\":\"Bombay\",\" \"company_profile\"\":\"\"Ideation\"\",\" \"hashtag\"\":\"\"#bridgelabz\"\"}")
+                .post("https://fundoopush-backend-dev.bridgelabz.com/jobs");
+        int statusCode = response.getStatusCode();
+        ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
+        System.out.println("Redirect Successfull..." + statusCode);
+        Assert.assertEquals(200, statusCode);
     }
 }

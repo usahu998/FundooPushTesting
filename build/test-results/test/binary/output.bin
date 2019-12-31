@@ -1,23 +1,11 @@
-<html lang="en">
-	  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-
-  </head>
-	  <body>
-,    <pre>Cannot POST /hashtag/edit123</pre>
-
-  </body>
-</html>
-<html lang="en">
-	  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-
-  </head>
-	  <body>
-,    <pre>Cannot POST /hashtag/edit123</pre>
-
-  </body>
-</html>
-Redirect successfull...404
+{
+    "status": false,
+    "status_code": 500,
+Z    "message": "Something bad happened. Please contact system administrator or try again"
+}
+{
+    "status": false,
+    "status_code": 500,
+Z    "message": "Something bad happened. Please contact system administrator or try again"
+}
+Redirect Successfull...200

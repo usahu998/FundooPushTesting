@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T10:30:59" hostname="admin1-desktop" time="1.111">
+<testsuite name="com.bridgelabz.fundoopush.UserRegistration" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-31T12:21:20" hostname="admin1-desktop" time="1.181">
   <properties/>
-  <testcase name="givenHashTagEditApi_WhenTokenAndHashTagBodyIscorrectButAPI_Incorrect_ShouldReturnStatusCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="1.111"/>
-  <system-out><![CDATA[<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-  </head>
-  <body>
-    <pre>Cannot POST /hashtag/edit123</pre>
-  </body>
-</html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-  </head>
-  <body>
-    <pre>Cannot POST /hashtag/edit123</pre>
-  </body>
-</html>
-Redirect successfull...404
+  <testcase name="givenJOBPOSTApi_whenAllCredentialAreCorrect_shouldReturnCode" classname="com.bridgelabz.fundoopush.UserRegistration" time="1.181"/>
+  <system-out><![CDATA[{
+    "status": false,
+    "status_code": 500,
+    "message": "Something bad happened. Please contact system administrator or try again"
+}
+{
+    "status": false,
+    "status_code": 500,
+    "message": "Something bad happened. Please contact system administrator or try again"
+}
+Redirect Successfull...200
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
