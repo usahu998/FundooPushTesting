@@ -5,10 +5,14 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
+import org.apache.http.HttpStatus;
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
@@ -17,6 +21,24 @@ import static io.restassured.RestAssured.given;
 
 public class UserRegistration {
 
+    private String tokenValue;
+
+
+
+    @Before
+    public void getToken() throws ParseException {
+        Response response = RestAssured.given().
+                contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .body("{\"email\":\"usahu998@gmail.com\",\"password\":\"123456\"}")
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/login");
+        ResponseBody body = response.getBody();
+        JSONObject object = (JSONObject) new JSONParser().parse(body.print());
+        tokenValue= (String)object.get("token");
+    }
+
+    public static  String Usertoken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc5NDQzOTQsImV4cCI6MTU3ODAzMDc5NH0.nNIZt593VIerf8NazT6UsNwLRhmVMkAkFRayl_c0AOo";
     @Test
     public void RegistrationSuccessful() {
         RestAssured.baseURI = "https://fundoopush-backend-dev.bridgelabz.com/registration";
@@ -148,7 +170,7 @@ public class UserRegistration {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc2OTg0MzIsImV4cCI6MTU3Nzc4NDgzMn0.vgRpy-SxVrMi9-C1aRGcXL2KPvPAVRZSkxn8zVPVvfs")
+                .header("token",tokenValue)
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/logout");
         int statusCode = response.getStatusCode();
@@ -174,7 +196,7 @@ public class UserRegistration {
         File testUploadFile = new File("/home/admin1/IdeaProjects/FundooPush/src/test/resources/ganeshJi");
         Response response = RestAssured.given()
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token",Usertoken)
                 .multiPart("image", testUploadFile)
                 .formParam("title", "ganesh")
                 .formParam("description", "ganeshji")
@@ -223,7 +245,7 @@ public class UserRegistration {
     public void givenRedirectGETApi_WhenTokenIsCorrect_ShouldReturnStatusCode() {
         Response response = given()
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token",tokenValue)
                 .when()
                 .get("https://fundoopush-backend-dev.bridgelabz.com/redirects");
         int statusCode = response.getStatusCode();
@@ -267,7 +289,7 @@ public class UserRegistration {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token", tokenValue)
                 .body("{\"_id\":\"5e0ad80a4d2267003253101b\"}")
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/redirects/delete");
@@ -299,7 +321,7 @@ public class UserRegistration {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("token", "eyJiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAz")
                 .body("{\"redirect_id\":\"5ed80a4d2267003253101b\",\"hashtag\":\"#bridgelabz #solutions #mumbai #bangalore #fundoopush\"}")
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/hashtag/edit");
@@ -354,7 +376,7 @@ public class UserRegistration {
         int statusCode = response.getStatusCode();
         ResponseBody body = response.getBody();
         System.out.println(body.prettyPrint());
-        System.out.println("Redirect successfull..." + statusCode);
+        System.out.println("User not found" + statusCode);
         Assert.assertEquals(404, statusCode);
     }
 
@@ -363,7 +385,7 @@ public class UserRegistration {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token",tokenValue)
                 .body("{\"hashtag\":\"#bridgelabz\"}")
                 .when()
                 .post("https://fundoopush-backend-dev.bridgelabz.com/search/hashtag");
@@ -398,21 +420,65 @@ public class UserRegistration {
         Assert.assertEquals(401, statusCode);
     }
 
-    //Issus
     @Test
-    public void givenJOBPOSTApi_whenAllCredentialAreCorrect_shouldReturnCode() {
+    public void givenTokenAndJobData_WhenCorrect_ShouldPostJob() throws ParseException {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("redirect_id", "5d41270b0d205f00a7687cbd");
+        jsonObject.put("years_of_experience", 2);
+        jsonObject.put("salary", 3.6);
+        jsonObject.put("location", "Pune");
+        jsonObject.put("company_profile", "Automation");
         Response response = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc3Njc5MDcsImV4cCI6MTU3Nzg1NDMwN30.GFOMDD4313lBLFWqINcdhsMvktiyLxDrIs2y5rsuaoQ")
+                .header("token", tokenValue)
+                .body(jsonObject.toJSONString())
                 .when()
-                .body("{\"redirect_id\":\"5e09d4b74d22670032530fbe\",\"years_of_experience\":\"12\",\"salary\":\"35.6\"," +
-                        "\"location\":\"Bombay\",\" \"company_profile\"\":\"\"Ideation\"\",\" \"hashtag\"\":\"\"#bridgelabz\"\"}")
                 .post("https://fundoopush-backend-dev.bridgelabz.com/jobs");
-        int statusCode = response.getStatusCode();
+        int status = response.getStatusCode();
+        String string = response.asString();
+        System.out.println(string);
+        MatcherAssert.assertThat(status, Matchers.equalTo(HttpStatus.SC_OK));
         ResponseBody body = response.getBody();
-        System.out.println(body.prettyPrint());
-        System.out.println("Redirect Successfull..." + statusCode);
-        Assert.assertEquals(200, statusCode);
     }
+
+
+    @Test
+    public void givenJobIdAndHashtagName_WhenCorrect_ShouldAddHashtagForJob() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("job_id", "5e0d88aa3b17ce008e85dc26");
+        jsonObject.put("hashtag", "#Bridgelabz #Mumbai");
+        Response response = RestAssured.given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", tokenValue)
+                .body(jsonObject.toJSONString())
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/jobs/hashtag/add");
+        int status = response.getStatusCode();
+        String string = response.asString();
+        System.out.println(string);
+        MatcherAssert.assertThat(status, Matchers.equalTo(HttpStatus.SC_OK));
+    }
+
+    @Test
+    public void givenJobIdAndHashtagId_WhenCorrect_ShouldRemoveTheHashtagFromExistingJob() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("job_id", "5e0d96353b17ce008e85dc65");
+        jsonObject.put("hashtag_id", "5d41270b0d205f00a7687cc0");
+        Response response = RestAssured.given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .header("token", tokenValue)
+                .body(jsonObject.toJSONString())
+                .when()
+                .post("https://fundoopush-backend-dev.bridgelabz.com/jobs/hashtag/remove");
+        int status = response.getStatusCode();
+        String string = response.asString();
+        System.out.println(string);
+        MatcherAssert.assertThat(status, Matchers.equalTo(HttpStatus.SC_OK));
+    }
+
+
+
 }

@@ -1,11 +1,2 @@
-{
-    "status": false,
-    "status_code": 500,
-Z    "message": "Something bad happened. Please contact system administrator or try again"
-}
-{
-    "status": false,
-    "status_code": 500,
-Z    "message": "Something bad happened. Please contact system administrator or try again"
-}
-Redirect Successfull...200
+ä{"status":true,"message":"Logged in Successfully","data":{"_id":"5e0982c54d22670032530f0d","email":"usahu998@gmail.com","password":"$2b$10$vvEj36YypYzWQtS18Su/x.Eb62rXqQV6BjO0gr1y6rFW.4C2szZXa","creator_stamp":"2019-12-30T04:53:25.304Z","update_stamp":"2020-01-02T12:15:47.719Z","__v":0},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjVlMDk4MmM1NGQyMjY3MDAzMjUzMGYwZCJ9LCJpYXQiOjE1Nzc5Njc0NzAsImV4cCI6MTU3ODA1Mzg3MH0.8Rbd7x1ylVxhtYYlyARHp8KIjGG7f77v6gvYBkWYd-w"}
+b{"status":true,"message":"Jobs hashtag removed successfully","data":{"n":1,"nModified":0,"ok":1}}
